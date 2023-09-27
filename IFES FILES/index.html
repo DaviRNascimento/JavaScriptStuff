@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Triangle Calculator</title>
+</head>
+
+<body>
+    <h1>Triangle Calculator</h1>
+
+    <hr>
+
+    <!-- Input Fields -->
+    <div class="inputs">    
+            <input type="number" id="side1" placeholder="side1">
+            <input type="number" id="side2" placeholder="side2">
+            <input type="number" id="side3" placeholder="side3">
+    </div>
+
+    <!-- Submit Button -->
+    <div class="button">
+        <button type="button" onclick="checkTriangle(document.getElementById('side1').value, document.getElementById('side2').value, document.getElementById('side3').value)">Check</button>
+    </div>
+
+    <!-- Answer -->
+    <div class="answer">
+        <p id="answer">Is it possible: <span id="possible"></span></p>
+        <p>Type of triangle: <span id="triangleType"></span></p>
+    </div>
+
+    <hr>
+
+    <div class="summary">
+        <h2>Summary</h2>
+
+        <dl>
+            <div class="dl-item">
+                <dt>Scalene</dt>
+                <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis maxime eos eius, molestiae amet vel temporibus in soluta cumque a hic iure unde blanditiis consequatur facere ratione doloremque at necessitatibus doloribus? Nam consequatur sequi accusamus, earum consectetur repudiandae animi illum cum eum temporibus ut exercitationem nulla, reiciendis ratione debitis deserunt?
+                </dd>
+                <img src="img/scalene_triangle.svg" alt=""> 
+            </div>
+
+            <div class="dl-item">
+                <dt>Isosceles</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora doloribus laboriosam, expedita officia sit assumenda, laborum odit sed sapiente quisquam amet ipsa corporis sequi adipisci esse nesciunt iusto. Aliquid debitis maiores molestiae alias recusandae dolor iure et. Nesciunt reprehenderit earum fuga cupiditate error ad fugit ipsa nihil nobis consequuntur.</dd>
+                <img src="img/isosceles_triangle.svg" alt="">
+            </div>
+
+            <div class="dl-item">
+                <dt>Equilateral</dt>
+                <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur assumenda sequi esse, dolorum reprehenderit deleniti praesentium pariatur ducimus architecto laudantium iusto id hic accusamus vel modi placeat rerum veniam autem, recusandae porro? Saepe incidunt omnis iusto magni culpa placeat reiciendis molestias natus officia? Nesciunt facere hic id vitae nisi.</dd>
+                <img src="img/equilateral-triangle.svg" alt="">
+            </div>
+        </dl>
+    </div>
+
+    <div class="forms">
+        <p>To make a triangle, all it's sides have to be less than the other 2 summed</p>
+        <ul>
+            <li>a < (b + c)</li>
+            <li>b < (a + c)</li>
+            <li>c < (b + a)</li>
+        </ul>
+    </div>
+
+</body>
+</html>
