@@ -1,0 +1,2 @@
+// this document was wrote by the writeFileSync method of the fs node module
+hello man
